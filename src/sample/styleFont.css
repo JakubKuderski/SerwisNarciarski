@@ -1,0 +1,9 @@
+.label {
+    -fx-font-size: 18px;
+}
+
+.text {
+    -fx-fill: green;
+    -fx-stroke: black;
+    -fx-stroke-width: 0.4px;
+}

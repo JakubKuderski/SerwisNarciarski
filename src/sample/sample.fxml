@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane hgap="10.0" prefHeight="579.0" prefWidth="805.0" vgap="10.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <BorderPane maxHeight="569.0" maxWidth="795.0" minHeight="569.0" minWidth="795.0" prefHeight="569.0" prefWidth="795.0">
+         <top>
+            <Label fx:id="labelLogin" text="Witaj w naszym serwisie" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="100.0" />
+               </BorderPane.margin>
+            </Label>
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="login" prefHeight="37.0" prefWidth="245.0" promptText="Podaj login">
+                     <VBox.margin>
+                        <Insets left="280.0" right="280.0" top="100.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="password" prefHeight="38.0" prefWidth="245.0" promptText="Podaj hasło">
+                     <VBox.margin>
+                        <Insets left="280.0" right="280.0" top="50.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button fx:id="buttonSignUp" minHeight="30.0" mnemonicParsing="false" onAction="#signUp" prefHeight="30.0" prefWidth="83.0" text="Zaloguj">
+                     <VBox.margin>
+                        <Insets left="365.0" top="50.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</GridPane>
